@@ -78,7 +78,7 @@
   --font-brand: "Playfair Display", var(--font-system);
 
   /* Transitions */
-  --theme-transition: 0.2s ease-in-out;
+  --theme-transition: 0.1s ease-in-out;
 }
 
 :root.theme-dark {

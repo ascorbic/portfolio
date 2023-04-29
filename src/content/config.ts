@@ -7,7 +7,6 @@ export const collections = {
       description: z.string(),
       featured: z.boolean().optional(),
       publishDate: z.coerce.date(),
-      tags: z.array(z.string()),
       url: z.string().optional(),
     }),
   }),

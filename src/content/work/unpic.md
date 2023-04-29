@@ -1,58 +1,26 @@
 ---
 title: Unpic
 publishDate: 2023-01-01 00:00:00
-img: /assets/stock-4.jpg
 featured: true
-img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 description:
   A toolkit for images on the web, including components for ten frameworks.
 url: https://unpic.pics
-tags:
-  - Design
-  - Branding
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere
-commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et
-malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit.
-In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper.
-Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras
-ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor,
-placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget
-tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada
-odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit
-non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+Unpic is a set of tools for working with images on the web:
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed
-interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna
-nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in
-vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis
-est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu
-euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida.
-In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra
-posuere purus ac imperdiet. Nulla facilisi.
+- Ten framework-specific [image components](https://unpic.pics/img) for
+  displaying high-performance, responsive images
+- A [library](https://unpic.pics/lib) for manipulating image CDN URLs
+- A library for [generating placeholder images](https://unpic.pics/placeholder)
+- A Deno and Node module for [extracting raw pixels](https://unpic.pics/pixels)
+  from images
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar
-pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus
-tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at
-sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis
-dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id
-feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem
-vitae, varius tellus.
-
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo
-consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed
-tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit,
-efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada
-fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum
-ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex,
-lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam
-tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum
-quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta,
-finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi
-sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat.
-Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor.
-Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum
-mollis fringilla.
+The core of the project is unpic-img, which involved creating a core library for
+generating the optimal `srcset`, `sizes` and styles for an image, and then
+building framework-specific components on top of that. I was one of the creators
+of the Gatsby image plugin several years ago, and for a long time I've wanted to
+build a framework-agnostic equivalent. It was an interesting exercise working
+with so many frameworks. For some of them I already had a good amount of
+experience, but for others I had to learn the basics. I also had to learn how to
+publish packages for each of them.
