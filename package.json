@@ -10,6 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.0.18"
+    "@unpic/astro": "^0.0.9",
+    "astro": "^2.1.0"
+  },
+  "devDependencies": {
+    "prettier-plugin-astro": "^0.8.0"
   }
 }
