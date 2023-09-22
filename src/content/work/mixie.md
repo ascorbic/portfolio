@@ -1,6 +1,6 @@
 ---
 title: Mixie
-publishDate: 2020-03-02 00:00:00
+publishDate: 2023-03-02 00:00:00
 description: ChatGPT-powered cocktail chatbot
 url: https://mixie.chat
 tags:

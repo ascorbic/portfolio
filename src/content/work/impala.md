@@ -2,7 +2,7 @@
 title: Impala
 publishDate: 2023-03-02 00:00:00
 description: Very simple React metaframework and static site generator
-featured: true
+featured: 2
 url: https://github.com/ascorbic/impala
 tags:
   - Frameworks

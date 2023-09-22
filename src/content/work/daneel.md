@@ -2,7 +2,7 @@
 title: Daneel
 publishDate: 2023-03-02 00:00:00
 description: Create your own GPT-powered chat bot
-featured: true
+featured: 3
 url: https://github.com/ascorbic/daneel
 tags:
   - AI
