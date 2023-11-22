@@ -126,7 +126,8 @@ const projects = (await getCollection("work"))
     aspect-ratio: calc(2.25 / var(--bg-scale));
     top: 0;
     transform: translateY(-75%) translateX(-50%);
-    background: url("/assets/backgrounds/noise.png") top center/220px repeat,
+    background:
+      url("/assets/backgrounds/noise.png") top center/220px repeat,
       var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
       var(--gray-999);
     background-blend-mode: overlay, normal, normal, normal;
@@ -154,11 +155,13 @@ const projects = (await getCollection("work"))
     .section {
       grid-template-columns: repeat(4, 1fr);
       grid-template-areas: "header header header header" "gallery gallery gallery gallery";
-      gap: 5rem;
+      gap: 1rem;
     }
 
     .section.with-cta {
-      grid-template-areas: "header header header cta" "gallery gallery gallery gallery";
+      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-areas: "header header header" "gallery gallery gallery" "cta cta cta";
     }
 
     .section-header {

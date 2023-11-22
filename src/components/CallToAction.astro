@@ -27,14 +27,15 @@ const { href } = Astro.props;
   @media (min-width: 20em) {
     a {
       font-size: var(--text-lg);
+      place-content: flex-start;
     }
   }
 
   @media (min-width: 50em) {
     a {
-      padding-top: 2.5rem;
+      padding-top: 1rem;
       font-size: var(--text-xl);
-      text-align: right;
+      text-align: left;
     }
   }
 </style>
