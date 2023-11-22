@@ -8,6 +8,7 @@ tags:
   - TypeScript
 ---
 
-GraphQL Guide is a custom GPT that has actions for exploring GraphQL APIs. It
-gives ChatGPT the ability to introspect GraphQL APIs, generate queries based on
-the schema, and run thos live queries against the API.
+GraphQL Guide is a custom GPT that has actions for querying and introspecting
+GraphQL servers. It gives ChatGPT the ability to introspect GraphQL APIs,
+generate queries based on the schema, and run those live queries against the
+server.
