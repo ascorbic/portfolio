@@ -1,5 +1,5 @@
 ---
-title: Live Trains Wear App
+title: Live Trains for Wear OS
 publishDate: 2024-01-02 00:00:00
 description: Watch app for tracking live UK train departures
 url: https://play.google.com/store/apps/details?id=live.departures.livetrains
