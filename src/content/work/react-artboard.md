@@ -2,6 +2,7 @@
 title: React Artboard
 publishDate: 2021-01-01 00:00:00
 description: Freeform sketching and painting components for React.
+image: /assets/portfolio/artboard.png
 url: https://react-artboard.netlify.app/
 ---
 

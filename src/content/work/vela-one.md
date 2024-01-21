@@ -2,7 +2,8 @@
 title: Vela One
 publishDate: 2019-12-01 00:00:00
 url: https://vela.io
-description: The world's fastest commercially-available camera flash
+description: The world's fastest camera flash
+image: /assets/portfolio/vela-one.webp
 tags:
   - Hardware
   - Embedded systems

@@ -2,6 +2,7 @@
 title: Mixie
 publishDate: 2023-03-02 00:00:00
 description: ChatGPT-powered cocktail chatbot
+icon: /assets/portfolio/mixie.png
 url: https://mixie.chat
 tags:
   - AI

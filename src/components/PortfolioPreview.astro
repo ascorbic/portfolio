@@ -10,40 +10,82 @@ const { data, slug } = Astro.props.project;
 ---
 
 <a class="card" href={`/projects/${slug}`}>
-  <span class="title">{data.title}</span>
-  <span class="description">{data.description}</span>
+  {
+    data.image ? (
+      <Image
+        class="image"
+        cdn="netlify"
+        src={data.image}
+        alt=""
+        width={600}
+        aspectRatio={7 / 4}
+        layout="constrained"
+      />
+    ) : data.icon ? (
+      <div class="icon">
+        <Image
+          cdn="netlify"
+          src={data.icon}
+          alt=""
+          width={192}
+          height={192}
+          layout="constrained"
+        />
+      </div>
+    ) : null
+  }
+  <div class="info">
+    <h3>{data.title}</h3>
+    <p class="description">{data.description}</p>
+  </div>
 </a>
 
 <style>
   .card {
-    padding: 1rem 1.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content 1fr;
+    display: block;
     border: 1px solid var(--gray-800);
-    overflow: hidden;
     box-shadow: var(--shadow-sm);
     text-decoration: none;
     font-family: var(--font-brand);
     font-size: var(--text-lg);
     font-weight: 500;
     transition: box-shadow var(--theme-transition);
+    transition: transform var(--theme-transition);
+  }
+
+  .info {
+    padding: 1rem;
+  }
+
+  .icon {
+    width: 100%;
+    aspect-ratio: 7 / 4;
+    border-bottom: 1px solid var(--gray-800);
+    display: grid;
+    place-items: center;
+    padding: 1em;
   }
 
   .card:hover {
     box-shadow: var(--shadow-md);
+    transform: scale(1.01);
   }
 
-  .title {
-    grid-area: 1 / 1 / 2 / 2;
-    z-index: 2;
+  .card img {
+    transition: filter 0.5s ease;
+  }
+
+  .card:hover img {
+    filter: saturate(200%);
+  }
+
+  h3 {
     color: var(--gray-200);
+    font-size: var(--text-md);
+    padding-bottom: 0.5rem;
   }
 
-  .description {
-    grid-area: 2 / 1 / 2 / 2;
-    z-index: 2;
-    margin-top: 0.5rem;
+  p {
     color: var(--gray-200);
     font-weight: 300;
     font-size: var(--text-md);

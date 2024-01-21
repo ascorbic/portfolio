@@ -2,8 +2,8 @@
 title: Unpic
 publishDate: 2023-01-01 00:00:00
 featured: 1
-description:
-  A toolkit for images on the web, including components for ten frameworks.
+image: https://images.unsplash.com/photo-1522303099041-44f71373af66
+description: A toolkit for images on the web
 url: https://unpic.pics
 ---
 

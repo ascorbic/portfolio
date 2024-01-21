@@ -2,6 +2,7 @@
 title: departures.live
 publishDate: 2019-12-01 00:00:00
 url: https://departures.live
+image: /assets/portfolio/departure.webp
 description: Realistic live train departure boards
 tags:
   - CSS

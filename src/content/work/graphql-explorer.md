@@ -3,6 +3,8 @@ title: GraphQL Explorer
 publishDate: 2023-11-21 00:00:00
 description: Explore GraphQL APIs with ChatGPT
 url: https://chat.openai.com/g/g-wIk9u0CVG-graphql-explorer
+icon: /assets/portfolio/graphql-icon.png
+image: /assets/portfolio/graphql-explorer.png
 tags:
   - ChatGPT
   - TypeScript

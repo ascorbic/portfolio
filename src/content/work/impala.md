@@ -1,8 +1,9 @@
 ---
 title: Impala
 publishDate: 2023-03-02 00:00:00
-description: Very simple React metaframework and static site generator
-featured: 2
+description: Simple React metaframework and SSG
+featured: 3
+icon: /assets/portfolio/impala.png
 url: https://github.com/ascorbic/impala
 tags:
   - Frameworks

@@ -4,6 +4,7 @@ publishDate: 2023-03-02 00:00:00
 img: https://res.cloudinary.com/dirlxi6fc/image/upload/v1679225247/og_gklbmz.png
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: AI-powered font recommendations
+icon: /assets/portfolio/font-icon.png
 url: https://font.institute
 tags:
   - AI
