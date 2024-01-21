@@ -4,6 +4,7 @@ publishDate: 2019-12-01 00:00:00
 url: https://vela.io
 description: The world's fastest camera flash
 image: /assets/portfolio/vela-one.webp
+icon: /assets/portfolio/vela-logo.png
 tags:
   - Hardware
   - Embedded systems

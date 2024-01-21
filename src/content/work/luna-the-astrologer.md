@@ -1,7 +1,7 @@
 ---
-title: Luna the Astrologer
+title: Luna the Astrologer GPT
 publishDate: 2023-12-20 00:00:00
-description: Astrology GPT with ephemeris API action
+description: Astrology GPT with ephemeris API
 image: /assets/portfolio/luna.png
 url: https://chat.openai.com/g/g-dUZg6nVPD-luna-the-astrologer
 tags:

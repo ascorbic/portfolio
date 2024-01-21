@@ -1,16 +1,24 @@
 ---
+import { Image } from "@unpic/astro";
 interface Props {
   title: string;
   tagline?: string;
+  icon?: string;
   align?: "start" | "center";
 }
 
-const { align = "center", tagline, title } = Astro.props;
+const { align = "center", tagline, title, icon } = Astro.props;
 ---
 
 <header class:list={["hero stack gap-4", align]}>
   <div class="stack gap-2">
-    <h1 class="title">{title}</h1>
+    <h1 class="title">
+      {
+        icon ? (
+          <Image class="icon" src={icon} alt="" width={56} height={56} />
+        ) : null
+      }<span>{title}</span>
+    </h1>
     {tagline && <p class="tagline">{tagline}</p>}
   </div>
   <slot />
@@ -20,6 +28,16 @@ const { align = "center", tagline, title } = Astro.props;
   .hero {
     font-size: var(--text-lg);
     text-align: center;
+  }
+
+  .icon {
+    margin-inline-end: 10px;
+  }
+
+  .title .icon,
+  .title span {
+    display: inline-block;
+    vertical-align: middle;
   }
 
   .title,
@@ -52,7 +70,7 @@ const { align = "center", tagline, title } = Astro.props;
     }
 
     .title {
-      font-size: var(--text-4xl);
+      font-size: var(--text-3xl);
     }
   }
 </style>

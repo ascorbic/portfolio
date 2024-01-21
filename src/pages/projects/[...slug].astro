@@ -34,14 +34,15 @@ const ctaIcon = isGithub ? "github-logo" : "arrow-right";
     <div class="stack gap-15">
       <header>
         <div class="wrapper stack gap-2">
+          <Hero
+            title={entry.data.title}
+            tagline={entry.data.description}
+            align="start"
+            icon={entry.data.icon}
+          />
           <a class="back-link" href="/projects/"
             ><Icon icon="arrow-left" /> Projects</a
           >
-          <Hero title={entry.data.title} align="start">
-            <div class="details">
-              <p class="description">{entry.data.description}</p>
-            </div>
-          </Hero>
         </div>
       </header>
       <main class="wrapper">
