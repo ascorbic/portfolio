@@ -14,23 +14,15 @@ const { data, slug } = Astro.props.project;
     data.image ? (
       <Image
         class="image"
-        cdn="netlify"
         src={data.image}
         alt=""
         width={600}
         aspectRatio={7 / 4}
-        layout="constrained"
+        placeholder="blurhash"
       />
     ) : data.icon ? (
       <div class="icon">
-        <Image
-          cdn="netlify"
-          src={data.icon}
-          alt=""
-          width={192}
-          height={192}
-          layout="constrained"
-        />
+        <Image src={data.icon} alt="" width={192} height={192} />
       </div>
     ) : null
   }

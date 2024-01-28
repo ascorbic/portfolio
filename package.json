@@ -10,7 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@unpic/astro": "^0.0.35",
+    "@unpic/astro": "^0.0.40",
     "astro": "^3.6.0"
   },
   "devDependencies": {
