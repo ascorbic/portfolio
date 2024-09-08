@@ -6,10 +6,10 @@ interface Props {
   project: CollectionEntry<"work">;
 }
 
-const { data, slug } = Astro.props.project;
+const { data, id } = Astro.props.project;
 ---
 
-<a class="card" href={`/projects/${slug}`}>
+<a class="card" href={`/projects/${id}`}>
   {
     data.image ? (
       <Image
