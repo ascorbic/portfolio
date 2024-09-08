@@ -10,9 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.5",
+    "@astrojs/rss": "^4.0.7",
     "@unpic/astro": "^0.0.41",
-    "astro": "^3.6.0"
+    "astro": "^4.15.4"
   },
   "devDependencies": {
     "prettier-plugin-astro": "^0.12.2"
