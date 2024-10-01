@@ -5,7 +5,8 @@ img: https://res.cloudinary.com/dirlxi6fc/image/upload/v1679225247/og_gklbmz.png
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: AI-powered font recommendations
 icon: /assets/portfolio/font-icon.png
-url: https://font.institute
+demo: https://font.institute
+repo: ascorbic/font-institute
 tags:
   - AI
   - Prompt engineering

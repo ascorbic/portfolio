@@ -24,9 +24,6 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
-
-const isGithub = entry.data.url?.includes("github.com");
-const ctaIcon = isGithub ? "github-logo" : "arrow-right";
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
@@ -50,14 +47,27 @@ const ctaIcon = isGithub ? "github-logo" : "arrow-right";
           <div class="content">
             <Content />
             {
-              entry.data.url && (
+              entry.data.repo ? (
                 <div class="cta">
-                  <CallToAction href={entry.data.url}>
-                    {isGithub ? "See the code" : "Visit the site"}
-                    <Icon icon={ctaIcon} size="1.2em" />
+                  <CallToAction
+                    href={`https://github.com/${entry.data.repo}`}
+                    icon="left"
+                  >
+                    <Icon icon="github-logo" size="1.2em" />
+                    {entry.data.repo}
                   </CallToAction>
                 </div>
-              )
+              ) : undefined
+            }
+            {
+              entry.data.demo ? (
+                <div class="cta">
+                  <CallToAction href={entry.data.demo} icon="left">
+                    <Icon icon="link" size="1.2em" />
+                    {new URL(entry.data.demo).hostname}
+                  </CallToAction>
+                </div>
+              ) : undefined
             }
           </div>
         </div>

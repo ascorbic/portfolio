@@ -2,7 +2,7 @@
 title: cdn-cache-control
 publishDate: 2024-06-06 00:00:00
 description: Easy, opinionated CDN cache header handling.
-url: https://github.com/ascorbic/cdn-cache-control
+repo: ascorbic/cdn-cache-control
 icon: /assets/portfolio/cache-control-white.png
 tags:
   - TypeScript

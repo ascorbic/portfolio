@@ -2,7 +2,7 @@
 title: usePHP
 publishDate: 2023-11-07 00:00:00
 description: React hook for running PHP
-url: https://github.com/ascorbic/use-php
+repo: ascorbic/use-php
 image: /assets/portfolio/usephp.jpg
 ---
 

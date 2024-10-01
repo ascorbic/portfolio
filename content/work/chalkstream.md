@@ -2,7 +2,7 @@
 title: Chalkstream
 publishDate: 2023-11-17 00:00:00
 description: Serverless live video streaming
-url: https://github.com/ascorbic/chalkstream
+repo: ascorbic/chalkstream
 icon: /assets/portfolio/chalkstream.png
 tags:
   - Video

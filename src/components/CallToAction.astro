@@ -1,12 +1,17 @@
 ---
 interface Props {
   href: string;
+  icon?: "left" | "right";
 }
 
-const { href } = Astro.props;
+const { href, icon } = Astro.props;
 ---
 
-<a href={href}><slot /></a>
+<a
+  href={href}
+  class:list={{ "icon-left": icon === "left", "icon-right": icon !== "left" }}
+  ><slot /></a
+>
 
 <style>
   a {
@@ -20,8 +25,16 @@ const { href } = Astro.props;
     place-content: center;
   }
 
-  a svg {
-    margin-left: 1em;
+  .icon-right {
+    svg {
+      margin-left: 0.5em;
+    }
+  }
+
+  .icon-left {
+    svg {
+      margin-right: 0.5em;
+    }
   }
 
   @media (min-width: 20em) {

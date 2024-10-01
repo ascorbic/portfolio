@@ -4,7 +4,7 @@ publishDate: 2023-03-02 00:00:00
 description: Simple React metaframework and SSG
 featured: 3
 icon: /assets/portfolio/impala.png
-url: https://github.com/ascorbic/impala
+repo: ascorbic/impala
 tags:
   - Frameworks
   - Vite

@@ -3,7 +3,7 @@ title: Live Trains for Wear OS
 publishDate: 2024-01-02 00:00:00
 description: Watch app for tracking live trains
 featured: 2
-url: https://play.google.com/store/apps/details?id=live.departures.livetrains
+demo: https://play.google.com/store/apps/details?id=live.departures.livetrains
 image: /assets/portfolio/livetrains.png
 icon: /assets/portfolio/livetrains-icon.png
 tags:
