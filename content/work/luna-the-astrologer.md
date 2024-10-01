@@ -10,6 +10,6 @@ tags:
 ---
 
 Luna may talk like a mystical astrologer, but this custom GPT is backed by a
-real ephemeris API. This means that Luna can perform readings based on the
-actual positions of the planets and stars now or at the time of the user's
-birth.
+real ephemeris API. This means that Luna can perform "real" readings based on
+the actual positions of the planets and stars now and at the time of the user's
+birth. Whether the results are accurate is another question entirely!
