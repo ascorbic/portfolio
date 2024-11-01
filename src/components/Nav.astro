@@ -1,6 +1,7 @@
 ---
-import Icon, { Props as IconProps } from "./Icon.astro";
+import { Icon } from "astro-icon/components";
 import ThemeToggle from "./ThemeToggle.astro";
+import type { ComponentProps } from "astro/types";
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
@@ -10,22 +11,26 @@ const textLinks: { label: string; href: string }[] = [
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
-const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
+const iconLinks: { label: string; href: string; icon: string }[] = [
   {
     label: "Twitter",
     href: "https://twitter.com/ascorbic",
-    icon: "twitter-logo",
+    icon: "ri:twitter-line",
   },
-  { label: "GitHub", href: "https://github.com/ascorbic", icon: "github-logo" },
+  {
+    label: "GitHub",
+    href: "https://github.com/ascorbic",
+    icon: "ri:github-line",
+  },
+  {
+    label: "BlueSky",
+    href: "https://bsky.app/profile/mk.gg",
+    icon: "ri:bluesky-line",
+  },
   {
     label: "Mastodon",
     href: "https://elk.zone/indieweb.social/@ascorbic",
-    icon: "chat",
-  },
-  {
-    label: "Dev.to",
-    href: "https://dev.to/ascorbic",
-    icon: "dev-to-logo",
+    icon: "ri:mastodon-line",
   },
 ];
 ---
@@ -37,7 +42,7 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
       <template>
         <button class="menu-button" aria-expanded="false">
           <span class="sr-only">Menu</span>
-          <Icon icon="list" />
+          <Icon name="ri:menu-line" />
         </button>
       </template>
     </menu-button>
@@ -71,7 +76,7 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
           iconLinks.map(({ href, icon, label }) => (
             <a href={href} class="social">
               <span class="sr-only">{label}</span>
-              <Icon icon={icon} />
+              <Icon name={icon} />
             </a>
           ))
         }
